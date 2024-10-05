@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Choice() {
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-200">
+        <div className="flex items-center justify-center min-h-screen bg-gray-200" style={{ backgroundImage: `url(/menuu.jpg)`, backgroundSize: '100%', backgroundRepeat: 'no-repeat' }}>
 
             {/* Back Button */}
             <Link href="/start" legacyBehavior>
