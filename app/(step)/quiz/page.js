@@ -139,8 +139,8 @@ export default function QuizPage() {
     if (isQuizFinished) {
         return (
             <div className="double-shadow flex flex-col items-center pt-80">
-                <h1 className="text-5xl mb-10">Quiz Finished!</h1>
-                <p className='text-4xl'>Your score is: {score} / {Quizz.length}</p>
+                <h1 className="text-3xl mb-10">Quiz Finished!</h1>
+                <p className='text-2xl'>Your score is: {score} / {Quizz.length}</p>
                 <button className='double-shadow text-4xl mt-10' onClick={resetQuiz}>Restart Quiz</button>
             </div>
         );
@@ -149,7 +149,7 @@ export default function QuizPage() {
     return (
         <div className="double-shadow pt-80">
             <div className='flex flex-col items-center'>
-                <h2 className="text-5xl mb-10">{currentQuestion.question}</h2>
+                <h2 className="text-3xl mb-10">{currentQuestion.question}</h2>
                 <form>
                     <table className="table-auto w-full mb-10">
                         <tbody>
@@ -165,14 +165,14 @@ export default function QuizPage() {
                                             className="h-6 w-6 appearance-none border-2 border-gray-400 rounded-full checked:bg-blue-600 checked:border-transparent transition duration-200"
                                         />
                                     </td>
-                                    <td className="text-4xl">{option}</td>
+                                    <td className="text-2xl">{option}</td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                 </form>
                 <button
-                    className="text-4xl mt-10 bg-black/70 hover:bg-black text-white font-bold py-2 px-4 rounded-lg cursor-pointer"
+                    className="text-2xl mt-3 bg-black/70 hover:bg-black text-white font-bold py-2 px-4 rounded-lg cursor-pointer"
                     onClick={handleNextQuestion}
                     disabled={!selectedAnswer}
                 >

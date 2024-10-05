@@ -117,10 +117,10 @@ export default function Explore() {
              style={{ backgroundImage: `url(/image${page + 2}.png)`, backgroundSize: '100%', backgroundRepeat: 'no-repeat' }}>
             
             <div className={`w-[80%] transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}>
-                <h1 className="text-5xl double-shadow mb-10 text-center">{content[page].title}</h1>
-                <p className="text-4xl double-shadow h-40">{content[page].paragraph}</p>
+                <h1 className="text-3xl double-shadow mb-10 text-center">{content[page].title}</h1>
+                <p className="text-2xl double-shadow h-40">{content[page].paragraph}</p>
 
-                <div className='absolute bottom-0 flex justify-between text-6xl text-center w-full right-0 pb-4 px-4'>
+                <div className='absolute bottom-0 flex justify-between text-3xl text-center w-full right-0 pb-4 px-4'>
                     <button className='double-shadow mr-10' 
                             onClick={() => changePage(Math.max(0, page - 1))}>
                         {'Go back'}
